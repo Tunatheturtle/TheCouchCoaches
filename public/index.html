@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Couch Coaches | Fantasy Football League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Base Styles ===== */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f6f8;
+      color: #222;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background-color: #20232a;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 4px solid #c8102e;
+    }
+
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.4rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    /* ===== Navigation ===== */
+    nav {
+      background-color: #c8102e;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* ===== Main Content ===== */
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .section h2 {
+      background-color: #20232a;
+      color: #fff;
+      padding: 1rem;
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.5px;
+      font-size: 1.5rem;
+    }
+
+    .section-content {
+      padding: 1.5rem;
+    }
+
+    /* ===== Blog Section ===== */
+    .blog-post {
+      margin-bottom: 1rem;
+    }
+
+    .blog-post h3 {
+      margin: 0;
+      color: #c8102e;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .blog-post p {
+      margin: 0.5rem 0 0 0;
+      line-height: 1.6;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #20232a;
+      color: #999;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* ===== Responsive Adjustments ===== */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .section-content {
+        padding: 1rem;
+      }
+      nav {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🏈 The Couch Coaches</h1>
+    <p>Your weekly dose of fantasy football drama and domination.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Blog of the Week</a>
+    <a href="#">Stats & Standings</a>
+    <a href="#">Spotlights</a>
+    <a href="#">Hall of Fame</a>
+  </nav>
+
+  <main>
+    <section class="section">
+      <h2>Blog of the Week</h2>
+      <div class="section-content">
+        <div class="blog-post">
+          <h3>Week 7 Recap: The Rise of the Underdogs</h3>
+          <p>The league saw major upsets this week as the 2–4 squads came out swinging.
+            <strong>Team Tuna</strong> pulled off the impossible with a last-minute win,
+            while <strong>Team McOrb</strong> continues its dominant streak with another 140+ point performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Power Rankings</h2>
+      <div class="section-content">
+        <ol>
+          <li><strong>1.</strong> McOrb’s Dynasty (6-1)</li>
+          <li><strong>2.</strong> Tuna the Turtle (5-2)</li>
+          <li><strong>3.</strong> Victorious Secret (4-3)</li>
+          <li><strong>4.</strong> Hot Chubb Time Machine (4-3)</li>
+          <li><strong>5.</strong> Sleeper Hitters (3-4)</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Manager Spotlight</h2>
+      <div class="section-content">
+        <p>This week’s spotlight goes to <strong>Team Tuna</strong>, who’s made the boldest waiver-wire moves of the season.
+          Rumor has it, they’re already eyeing next week’s free-agent chaos after claiming Puka Nacua back in Week 2.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>League History & Hall of Fame</h2> 
+      <div class="section-content">
+        <p>Welcome to the Hall of Fame — where legends never sit the bench.  
+          Check back soon for stats, trophies, and epic rivalries that shaped our league.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 The Couch Coaches Fantasy League | Built with Firebase Hosting</p>
+  </footer>
+</body>
+</html>

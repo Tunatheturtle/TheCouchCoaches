@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "the-couch-coaches",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
