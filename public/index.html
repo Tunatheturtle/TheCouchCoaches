@@ -195,6 +195,120 @@
       margin-top: 2rem;
     }
 
+/* ===== Playoff Odds Table ===== */
+.odds-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #222;
+  background-color: #fff;
+}
+
+.odds-table th {
+  background-color: #f0f0f0;
+  color: #c8102e;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.75rem;
+  border-bottom: 2px solid #c8102e;
+}
+
+.odds-table td {
+  text-align: center;
+  padding: 0.6rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.odds-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #c8102e;
+}
+
+.odds-table tr:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.odds-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== Scenarios styling ===== */
+.scenarios {
+  margin-top: 2rem;
+  background-color: #fafafa;
+  border-top: 2px solid #c8102e;
+  border-radius: 8px;
+  padding: 1.25rem 1.25rem 1rem;
+}
+
+.scenarios h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #c8102e;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem 0;
+}
+
+.scenario-note {
+  background: #fff;
+  border: 1px solid #eee;
+  border-left: 4px solid #c8102e;
+  border-radius: 6px;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.scenarios h4 {
+  color: #222;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  margin: 1rem 0 0.4rem 0;
+  border-left: 4px solid #c8102e;
+  padding-left: 0.5rem;
+}
+
+.scenario-sub {
+  margin: 0.3rem 0 0.6rem 0;
+  color: #444;
+}
+
+.scenario-list {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0 0 0.6rem 0;
+}
+
+.scenario-list li {
+  margin: 0.35rem 0;
+  line-height: 1.45;
+}
+
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+.scenario-grid > div {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem;
+}
+
+.scenario-grid h5 {
+  margin: 0 0 0.4rem 0;
+  font-family: 'Oswald', sans-serif;
+  color: #20232a;
+  font-size: 1rem;
+}
+
+
     /* ===== Responsive Adjustments ===== */
     @media (max-width: 600px) {
 .blog-highlight {
@@ -297,22 +411,193 @@
         </ol>
       </div>
     </section>
+<!-- ===== Playoff Odds Section ===== -->
+<section class="section" id="playoff-odds">
+  <h2>Playoff Odds</h2>
+  <div class="section-content">
+    <table class="odds-table">
+      <thead>
+        <tr>
+          <th>Team Name</th>
+          <th>1st</th>
+          <th>2nd</th>
+          <th>3rd</th>
+          <th>4th</th>
+          <th>5th</th>
+          <th>6th</th>
+          <th>7th</th>
+          <th>8th</th>
+          <th>9th</th>
+          <th>10th</th>
+          <th>11th</th>
+          <th>12th</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>dug</td><td>98.67%</td><td>1.19%</td><td>0.13%</td><td>0.01%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>100%</td>
+        </tr>
+        <tr>
+          <td>CeeDeez Nuts</td><td>1.01%</td><td>75.01%</td><td>14.85%</td><td>5.33%</td><td>2.35%</td><td>0.88%</td><td>0.38%</td><td>0.13%</td><td>0.06%</td><td>0%</td><td>0%</td><td>0%</td><td>99.43%</td>
+        </tr>
+        <tr>
+          <td>Team Clark</td><td>0.25%</td><td>15.47%</td><td>38.45%</td><td>22.99%</td><td>11.68%</td><td>6.03%</td><td>3.06%</td><td>1.35%</td><td>0.54%</td><td>0.13%</td><td>0.05%</td><td>0%</td><td>94.87%</td>
+        </tr>
+        <tr>
+          <td>FINN RULES</td><td>0%</td><td>2.64%</td><td>21.19%</td><td>25.67%</td><td>18.91%</td><td>13.74%</td><td>9.59%</td><td>5.12%</td><td>2.09%</td><td>0.86%</td><td>0.18%</td><td>0.01%</td><td>82.15%</td>
+        </tr>
+        <tr>
+          <td>Maximum Effort</td><td>0.05%</td><td>2.44%</td><td>8.59%</td><td>13.84%</td><td>19.92%</td><td>19.55%</td><td>16.32%</td><td>10.23%</td><td>6.13%</td><td>2.32%</td><td>0.61%</td><td>0%</td><td>64.39%</td>
+        </tr>
+        <tr>
+          <td>Steal the Teal</td><td>0.01%</td><td>1.7%</td><td>8.69%</td><td>15.12%</td><td>18.04%</td><td>17.04%</td><td>16.11%</td><td>11.29%</td><td>6.53%</td><td>3.88%</td><td>1.58%</td><td>0.01%</td><td>60.6%</td>
+        </tr>
+        <tr>
+          <td>Airhead</td><td>0.01%</td><td>1.19%</td><td>4.9%</td><td>8.93%</td><td>13.52%</td><td>16.33%</td><td>17.1%</td><td>14.39%</td><td>11.04%</td><td>7.92%</td><td>4.66%</td><td>0.01%</td><td>44.88%</td>
+        </tr>
+        <tr>
+          <td>Party Cat</td><td>0%</td><td>0.29%</td><td>2.01%</td><td>4.88%</td><td>8%</td><td>12.45%</td><td>15.18%</td><td>18.79%</td><td>17.14%</td><td>13.1%</td><td>7.94%</td><td>0.22%</td><td>27.63%</td>
+        </tr>
+        <tr>
+          <td>Momma’s Boys</td><td>0%</td><td>0.06%</td><td>0.83%</td><td>1.93%</td><td>4.03%</td><td>6.61%</td><td>9.77%</td><td>15.31%</td><td>19.9%</td><td>21.8%</td><td>18.64%</td><td>1.12%</td><td>13.46%</td>
+        </tr>
+        <tr>
+          <td>Dean’s Dynasty</td><td>0%</td><td>0.01%</td><td>0.22%</td><td>0.78%</td><td>2.23%</td><td>4.49%</td><td>6.9%</td><td>12.97%</td><td>18.46%</td><td>23.09%</td><td>29.29%</td><td>1.56%</td><td>7.73%</td>
+        </tr>
+        <tr>
+          <td>El Pretzel</td><td>0%</td><td>0%</td><td>0.14%</td><td>0.52%</td><td>1.32%</td><td>2.88%</td><td>5.59%</td><td>10.39%</td><td>17.85%</td><td>26.31%</td><td>33.6%</td><td>1.4%</td><td>4.86%</td>
+        </tr>
+        <tr>
+          <td>Coming Up From Below</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0.03%</td><td>0.26%</td><td>0.59%</td><td>3.45%</td><td>95.67%</td><td>0%</td>
+        </tr>
+      </tbody>
+    </table>
+<!-- ===== Clinching & Elimination Scenarios (Week 8 outlook) ===== -->
+<div class="scenarios">
+  <h3>week 8 Clinching & Elimination Scenarios</h3>
 
-    <section class="section">
-      <h2>Manager Spotlight</h2>
-      <div class="section-content">
-        <p>This week’s spotlight goes to <strong>Team Tuna</strong>, who’s made the boldest waiver-wire moves of the season.
-          Rumor has it, they’re already eyeing next week’s free-agent chaos after claiming Puka Nacua back in Week 2.</p>
-      </div>
-    </section>
+  <!-- High-level notes -->
+  <div class="scenario-note">
+    <p><strong>Context:</strong> 7 weeks remain (14-game season), 6 teams make playoffs. With this much runway, there are
+    <em>no mathematical playoff clinches or eliminations</em> yet. Still, several useful milestones are in play this week.</p>
+  </div>
 
-    <section class="section">
-      <h2>League History & Hall of Fame</h2> 
-      <div class="section-content">
-        <p>Welcome to the Hall of Fame — where legends never sit the bench.  
-          Check back soon for stats, trophies, and epic rivalries that shaped our league.</p>
-      </div>
-    </section>
+  <h4>This Week’s Milestones</h4>
+  <ul class="scenario-list">
+    <li><strong>dug (7–0):</strong> <em>Clinches a winning record</em> with a win this week (reaches 8–0 ⇒ cannot finish below 8–6). Already clinched a non-losing record (≥7–7) even with 0–7 finish.</li>
+    <li><strong>CeeDeez Nuts (5–2), Team Clark (5–2), Maximum Effort (5–2):</strong> Need 2 wins to clinch at least a non-losing record (reach 7–2). A winning record (≥8–6) requires 3 more wins.</li>
+    <li><strong>Airhead (4–3):</strong> Needs 3 wins to clinch non-losing (7–3) and 4 total to ensure a winning record (≥8–6).</li>
+  </ul>
+
+  <h4>🔒 Earliest True Playoff Clinch Paths (mathematical)</h4>
+  <p class="scenario-sub">A team clinches a berth the moment its win total exceeds the <em>maximum possible</em> wins of the
+  7th-place team. With three clubs at 3–4, their current maximum is 10 wins (3 + 7). That means:</p>
+  <ul class="scenario-list">
+    <li><strong>dug (7–0):</strong> Earliest outright clinch at 11 wins without any help (four more wins). Could clinch sooner if multiple bubble teams (currently 3–4 and 4–3) stack losses and reduce their max-win ceilings.</li>
+    <li><strong>5–2 tier:</strong> Earliest no-help clinch at 11 wins (need 6 of next 7). Could clinch around 10 wins with significant help (bubble teams accumulating losses).</li>
+  </ul>
+
+  <h4>🧊 Earliest Elimination Watch (mathematical)</h4>
+  <p class="scenario-sub">A team is eliminated when even a perfect finish can’t catch at least the 6th seed. With 7 weeks left, no team is close to that threshold yet:</p>
+  <ul class="scenario-list">
+    <li><strong>Coming Up From Below (1–6):</strong> Can still reach 8–6; not eliminated. Would approach elimination only if six teams reach ≥9 wins while CUFB can’t exceed 8.</li>
+    <li><strong>2–5 tier (Momma’s Boys, El Pretzel, Dean’s Dynasty):</strong> Max 9–5; still alive, but need to start stacking wins quickly.</li>
+  </ul>
+
+  <h4>🎯 Team-by-Team “This Week” Guide</h4>
+  <div class="scenario-grid">
+    <div>
+      <h5>dug (7–0)</h5>
+      <ul>
+        <li><strong>Win:</strong> Clinches winning record (≥8–6).</li>
+        <li><strong>Playoff path:</strong> Any week where dug wins <em>and</em> at least two of the bubble teams (FINN RULES / Steal the Teal / Party Cat / Airhead) also lose, the earliest clinch week moves up.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>CeeDeez Nuts (5–2)</h5>
+      <ul>
+        <li><strong>Win:</strong> 6–2; 1 win away from non-losing record.</li>
+        <li><strong>Playoff path:</strong> Win + losses by any two of (Airhead, Steal the Teal, FINN RULES, Party Cat) improves potential 10-win clinch scenario.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Team Clark (5–2)</h5>
+      <ul>
+        <li><strong>Win:</strong> 6–2; same milestones as CeeDeez.</li>
+        <li><strong>Playoff path:</strong> Win + ≥2 bubble losses reduces 7th-place max, nudging 10-win clinch feasibility.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Maximum Effort (5–2)</h5>
+      <ul>
+        <li><strong>Win:</strong> 6–2; 1 from non-losing, 2 from winning record.</li>
+        <li><strong>Playoff path:</strong> Same as above — keep building toward 10 wins while bubble teams lose.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Airhead (4–3)</h5>
+      <ul>
+        <li><strong>Win:</strong> 5–3; needs 2 more for non-losing, 3 more for winning record.</li>
+        <li><strong>Stay-ahead scenario:</strong> Win + at least one of (Steal the Teal, FINN RULES, Party Cat) loses.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Steal the Teal (3–4)</h5>
+      <ul>
+        <li><strong>Win:</strong> 4–4; max still 10 wins.</li>
+        <li><strong>Avoid danger:</strong> Win to keep 10-win ceiling intact; loss drops ceiling to 9 and makes late surge tougher.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>FINN RULES (3–4)</h5>
+      <ul>
+        <li><strong>Win:</strong> 4–4; stays in the thick of the 6-seed race.</li>
+        <li><strong>Avoid danger:</strong> Same as Steal the Teal — protect that 10-win max.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Party Cat (3–4)</h5>
+      <ul>
+        <li><strong>Win:</strong> 4–4; keeps pace for the 6-seed.</li>
+        <li><strong>Tiebreakers:</strong> Points-for margin matters on this tier; consider high-upside starts.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Momma’s Boys (2–5)</h5>
+      <ul>
+        <li><strong>Win:</strong> 3–5; max 9–5 stays alive.</li>
+        <li><strong>Stay alive:</strong> Needs win + at least one of (Steal the Teal, FINN RULES, Party Cat) to lose.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>El Pretzel (2–5)</h5>
+      <ul>
+        <li><strong>Win:</strong> 3–5; same math as Momma’s Boys.</li>
+        <li><strong>Path:</strong> Win out vs. bubble teams’ losses keeps 9-win target viable.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Dean’s Dynasty (2–5)</h5>
+      <ul>
+        <li><strong>Win:</strong> 3–5; still very much alive.</li>
+        <li><strong>Path:</strong> Needs to stack wins now; 4–3 over next 7 is baseline, but 5–2 puts them in real contention.</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Coming Up From Below (1–6)</h5>
+      <ul>
+        <li><strong>Win:</strong> 2–6; max 8–6 remains in play.</li>
+        <li><strong>Avoid elimination track:</strong> Must start a streak; elimination only looms if six teams reach 9+ wins while CUFB’s max caps at 8.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+   
   </main>
 
   <footer>
