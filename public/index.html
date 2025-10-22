@@ -102,7 +102,51 @@
       margin: 0.5rem 0 0 0;
       line-height: 1.6;
     }
+/* ===== Blog Highlight Section ===== */
+.blog-highlight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin-top: 1rem;
+}
 
+.highlight-image {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.highlight-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.highlight-text h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.highlight-text p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
     /* ===== Footer ===== */
     footer {
       background-color: #20232a;
@@ -115,6 +159,12 @@
 
     /* ===== Responsive Adjustments ===== */
     @media (max-width: 600px) {
+.blog-highlight {
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+
       header h1 {
         font-size: 1.8rem;
       }
@@ -131,8 +181,17 @@
 <body>
   <header>
     <h1>🏈 The Couch Coaches</h1>
-    <p>Your weekly dose of fantasy football drama and domination.</p>
+    <p>Where we all definitely know what we're doing.</p>
   </header>
+<section class="blog-highlight">
+  <img src="images/week7SB.png" alt="Week 7 Showdown" class="highlight-image">
+  
+  <div class="highlight-text">
+    <h2>Week 7 Sunday Breakdown</h2>
+    <p>Week 7 brought chaos — injuries, upsets, and some truly questionable trades. Here’s how it all unfolded across the league...</p>
+    <a href="#" class="read-more">Read More →</a>
+  </div>
+</section>
 
   <nav>
     <a href="#">Home</a>
