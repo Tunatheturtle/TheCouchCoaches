@@ -120,6 +120,26 @@
       margin: 0.5rem 0 0 0;
       line-height: 1.6;
     }
+
+/* ===== Glossy Gold Text Effect ===== */
+.glossy-gold {
+  background: linear-gradient(45deg, #b8860b, #ffd700, #fff8dc, #d4af37, #b8860b);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  animation: shine 6s linear infinite;
+}
+
+/* Subtle shimmer animation */
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
 /* ===== Blog Highlight Section ===== */
 .blog-highlight {
   display: flex;
