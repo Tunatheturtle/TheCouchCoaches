@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Couch Coaches | League History & Hall of Fame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #000; /* black background */
+      color: #f5f5f5; /* soft white text */
+    }
+
+    header {
+      background-color: #111;
+      border-bottom: 2px solid #D4AF37; /* gold accent line */
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      color: #D4AF37; /* gold title */
+      font-size: 2.5rem;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #D4AF37;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+
+    section h2 {
+      color: #D4AF37;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #D4AF37;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .record-card, .hof-card, .standings-card {
+      background-color: #000;
+      border: 1px solid #D4AF37;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .record-card h3, .hof-card h3, .standings-card h3 {
+      color: #f5f5f5;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header and Nav ===== -->
+  <header>
+    <h1>League History & Hall of Fame</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="weekly-updates.html">Weekly Updates</a>
+    <a href="stats.html">Stats & Standings</a>
+    <a href="spotlights.html">Player/Manager Spotlights</a>
+    <a href="league-history.html" style="color: #D4AF37;">League History</a>
+  </nav>
+
+  <!-- ===== Records Section ===== -->
+  <section id="records">
+    <h2>All-Time Records</h2>
+    <div class="record-card">
+      <h3>Most Wins (Single Season)</h3>
+      <p><strong>Team:</strong> Tampa Bay Tyrants — 11 Wins (2022)</p>
+    </div>
+    <div class="record-card">
+      <h3>Highest Scoring Week</h3>
+      <p><strong>Team:</strong> The Brady Punch — 187.4 Points (Week 8, 2023)</p>
+    </div>
+    <div class="record-card">
+      <h3>Longest Win Streak</h3>
+      <p><strong>Team:</strong> Couch Commanders — 7 Games (2021)</p>
+    </div>
+  </section>
+
+  <!-- ===== Hall of Fame Section ===== -->
+  <section id="hall-of-fame">
+    <h2>Hall of Fame</h2>
+    <div class="hof-card">
+      <h3>2021 Inductee — The Brady Punch</h3>
+      <p>First two-time champion and master of waiver-wire wizardry. Known for consistent playoff dominance.</p>
+    </div>
+    <div class="hof-card">
+      <h3>2022 Inductee — Tampa Bay Tyrants</h3>
+      <p>Perfect draft execution and unmatched midseason trades secured a dominant 11–2 run.</p>
+    </div>
+  </section>
+
+  <!-- ===== Past Standings Section ===== -->
+  <section id="past-standings">
+    <h2>Past Standings</h2>
+    <div class="standings-card">
+      <h3>2023 Final Standings</h3>
+      <ul>
+        <li>1. The Brady Punch (10–3)</li>
+        <li>2. Couch Commanders (9–4)</li>
+        <li>3. Gridiron Gurus (8–5)</li>
+        <li>4. Tampa Bay Tyrants (7–6)</li>
+      </ul>
+    </div>
+
+    <div class="standings-card">
+      <h3>2022 Final Standings</h3>
+      <ul>
+        <li>1. Tampa Bay Tyrants (11–2)</li>
+        <li>2. The Brady Punch (9–4)</li>
+        <li>3. Sunday Scaries (8–5)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 The Couch Coaches League | Designed by Haley Neal</p>
+  </footer>
+
+</body>
+</html>
