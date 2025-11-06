@@ -6,6 +6,7 @@
   <title>The Couch Coaches | League History & Hall of Fame</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
+    /* ===== Base Styles ===== */
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -20,22 +21,6 @@
       border-bottom: 3px solid #b8860b;
     }
 
-    header h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2.5rem;
-      margin: 0;
-      background: linear-gradient(180deg,
-        #fffbe6 0%,
-        #ffec80 10%,
-        #ffd700 25%,
-        #ffb800 45%,
-        #e6a300 65%,
-        #b87300 85%,
-        #fff3b0 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
     nav {
       background-color: #111;
       display: flex;
@@ -46,14 +31,16 @@
     }
 
     nav a {
-      color: #ffd700;
+      color: #daa520;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s ease;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+      animation: pulse 3s ease-in-out infinite;
     }
 
     nav a:hover {
-      color: #fff;
+      color: #ffd700;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
     }
 
     main {
@@ -66,13 +53,54 @@
       margin-bottom: 3rem;
     }
 
-    h2 {
+    /* ===== Metallic Gold Text with Shining + Pulse Animation ===== */
+    .gold-text {
+      background: linear-gradient(
+        90deg,
+        #b8860b 0%,
+        #daa520 25%,
+        #ffd700 50%,
+        #daa520 75%,
+        #b8860b 100%
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 5s linear infinite, pulse 4s ease-in-out infinite;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.3),
+                   0 0 20px rgba(255, 215, 0, 0.2);
+    }
+
+    @keyframes shine {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.25),
+                     0 0 20px rgba(255, 215, 0, 0.15);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.45),
+                     0 0 40px rgba(255, 215, 0, 0.3);
+      }
+    }
+
+    h1, h2 {
       font-family: 'Oswald', sans-serif;
-      font-size: 1.8rem;
-      color: #ffd700;
-      border-bottom: 2px solid #b8860b;
-      padding-bottom: 0.5rem;
+      font-weight: 500;
       margin-bottom: 1rem;
+    }
+
+    h1.gold-text {
+      font-size: 2.5rem;
+    }
+
+    h2.gold-text {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #b8860b;
+      padding-bottom: 0.4rem;
     }
 
     p, li {
@@ -99,7 +127,7 @@
 </head>
 <body>
   <header>
-    <h1>League History & Hall of Fame</h1>
+    <h1 class="gold-text">League History & Hall of Fame</h1>
   </header>
 
   <nav>
@@ -110,14 +138,14 @@
 
   <main>
     <section id="records">
-      <h2>All-Time Records</h2>
-      <div class="record"><strong>Highest Single-Week Score:</strong> 187.4 (Team Lightning, 2023)</div>
-      <div class="record"><strong>Longest Win Streak:</strong> 7 games (Sack Attack, 2022)</div>
-      <div class="record"><strong>Most Career Wins:</strong> Couch Commander (34)</div>
+      <h2 class="gold-text">All-Time Records</h2>
+      <div class="record"><strong>Highest Single-Week Score:</strong> 248.2 (dug, 2025 Week 7)</div>
+      <div class="record"><strong>Most Points by a Single Player:</strong> 60.5 (dug, 2025 Week 7)</div>
+      <div class="record"><strong>Most Wins in a Season:</strong> Deans Dynasty (13, 2023)</div>
     </section>
 
     <section id="hall-of-fame">
-      <h2>Hall of Fame</h2>
+      <h2 class="gold-text">Hall of Fame</h2>
       <p>The Couch Coaches Hall of Fame honors the most dominant and iconic seasons in league history.</p>
       <ul>
         <li><strong>2023 – Team Lightning:</strong> 10-3 record, Championship Winner</li>
@@ -127,7 +155,7 @@
     </section>
 
     <section id="past-standings">
-      <h2>Past Standings</h2>
+      <h2 class="gold-text">Past Standings</h2>
       <p>Review the year-by-year league finishes and playoff results below.</p>
       <ul>
         <li><strong>2023:</strong> Lightning > Sack Attack > Couch Commander > TDs in Paris</li>
