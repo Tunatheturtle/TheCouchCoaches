@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Couch Coaches – Playoff What-If Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Athletic-style layout enhancements */
+
+    .sim-header {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .sim-subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+
+    .sim-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .sim-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .sim-card {
+      background: #ffffff10;
+      border: 1px solid #ffffff20;
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+    }
+
+    .sim-card h3 {
+      margin-bottom: 10px;
+      color: #00ff9c;
+    }
+
+    .dropdown {
+      width: 100%;
+      padding: 10px;
+      background: #222;
+      color: white;
+      border-radius: 6px;
+      border: 1px solid #444;
+      margin-top: 8px;
+    }
+
+    .result-box {
+      margin-top: 40px;
+      padding: 25px;
+      background: #ffffff10;
+      border: 1px solid #ffffff25;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR LOADED HERE -->
+  <header>
+    <!-- your existing navbar code will automatically load across all pages -->
+  </header>
+
+  <main>
+    <h1 class="sim-header">Playoff What-If Simulator</h1>
+    <div class="sim-subtitle">Toggle outcomes for the remaining games to see how playoff odds and seeding change in real time.</div>
+
+    <div class="sim-container">
+
+      <!-- === MATCHUP SIMULATION PANEL === -->
+      <div class="sim-grid">
+        <div class="sim-card">
+          <h3>Game: Steal the Teal vs CeeDeez Nuts</h3>
+          <select class="dropdown">
+            <option value="">Select outcome...</option>
+            <option value="teal">Steal the Teal wins</option>
+            <option value="cee">CeeDeez Nuts wins</option>
+          </select>
+        </div>
+
+        <div class="sim-card">
+          <h3>Game: Party Cat vs Coming Up From Below</h3>
+          <select class="dropdown">
+            <option value="">Select outcome...</option>
+            <option value="pc">Party Cat wins</option>
+            <option value="cu">Coming Up From Below wins</option>
+          </select>
+        </div>
+
+        <!-- Continue adding game cards for all Week 11, 12, 13, 14 matchups -->
+      </div>
+
+      <!-- === RESULTS PANEL === -->
+      <div class="result-box">
+        <h2>Updated Playoff Picture</h2>
+        <p>Once outcomes are selected, the projected standings and playoff probabilities will update here.</p>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
